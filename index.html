@@ -9,52 +9,62 @@
 </head>
 <body>
   <aside>
-    <article>
-      <img class="img--nav"/>
+    <article class="aside-img">
+      <img class="img--nav" src="images/head-3065846_640.jpg"/>
+      <p>The Thinker<i class="fa fa-sort-desc" aria-hidden="true"></i></p>
     </article>
+    <hr>
     <article>
       <h3>Main</h3>
         <ul>
-          <li>Home</li>
-          <li>Jobs</li>
-          <li>Resumes</li>
-          <li>Tasks</li>
-          <li>Calendar</li>
+          <li><i class="fa fa-home" aria-hidden="true"></i>Home</li>
+          <li><i class="fa fa-briefcase" aria-hidden="true"></i>Jobs</li>
+          <li><i class="fa fa-file-text" aria-hidden="true"></i>Resumes</li>
+          <li><i class="fa fa-tasks" aria-hidden="true"></i>Tasks</li>
+          <li><i class="fa fa-calendar" aria-hidden="true"></i>Calendar</li>
         </ul>
     </article>
-    <article >
+    <hr>
+    <article>
       <h3>Admin</h3>
         <ul>
-          <li>Users</li>
-          <li>Locations</li>
-          <li>Workflows</li>
-          <li>Job Boards</li>
-          <li>Social</li>
+          <li><i class="fa fa-users" aria-hidden="true"></i>Users</li>
+          <li><i class="fa fa-map-marker" aria-hidden="true"></i>Locations</li>
+          <li><i class="fa fa-sitemap" aria-hidden="true"></i>Workflows</li>
+          <li><i class="fa fa-mobile" aria-hidden="true"></i>Job Boards</li>
+          <li><i class="fa fa-share-square-o" aria-hidden="true"></i>Social</li>
         </ul>
     </article>
     <article>
       <h3>Categories</h3>
-        <ul>
-          <li>Administrative</li>
-          <li>Design</li>
-          <li>Executive</li>
-          <li>Human Resources</li>
-        </ul>
+        <form>
+          <input type="checkbox" class="administrative" checked="true" value="Administrative">
+          <label for="administrative">Administrative</label>
+          <input type="checkbox" class="design">
+          <label for="design">Design</label>
+          <input type="checkbox" class="excecutive"/>
+          <label for="executive">Executive</label>
+          <input type="checkbox" class="human resources" name="HR">
+          <label for="human resources"
+        </form>
     </article>
   </aside>
   <main>
     <header>
-      <button type="button" value="menu" class="button button--header button--menu"><i class="fa fa-bars fa-xs" aria-hidden="true"></i></button>
-      <input type="search" class="input input--search" name="search" placeholder="Search for a job, task, or resume">
-      <button type="button" value="add" class="button button--header" name="social media"><i class="fa fa-user-plus fa-xs" aria-hidden="true"></i></button> 
-      <button type="button" value="calendar" class="button button--header"><i class="fa fa-calendar fa-xs" aria-hidden="true"></i></button>
-      <button type="button" value="files" class="button button--header"><i class="fa fa-th fa-xs" aria-hidden="true"></i></button>
+      <section class="search-and-buttons">
+        <button type="button" value="menu" class="button button--header button--menu"><i class="fa fa-bars fa-xs" aria-hidden="true"></i></button>
+        <input type="search" class="input input--search" name="search" placeholder="Search for a job, task, or resume">
+        <button type="button" value="add" class="button button--header" name="social media"><i class="fa fa-user-plus fa-xs" aria-hidden="true"></i></button> 
+        <button type="button" value="calendar" class="button button--header"><i class="fa fa-calendar fa-xs" aria-hidden="true"></i></button>
+        <button type="button" value="files" class="button button--header"><i class="fa fa-th fa-xs" aria-hidden="true"></i></button>
+      </section>
     </header>
     <section class="section section-first">
       <p>Junior Software Developer, Front End
       </p>
-      
-      <button type="button" value="open" class="button button--open"><img class="green-dot" src="49328-green-dot-icon.png"></img>Open</button>
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i>CURRENT DATE</p>
+      <a href="preview.html">Preview this Post</a>
+      <button type="button" value="open" class="button button--open"><img class="green-dot" src="images/49328-green-dot-icon.png"></img>Open</button>
       
       <button type="button" value="bookmark" class="button button--bookmark"><i class="fa fa-bookmark fa-xs" aria-hidden="true"></i></button>
       
@@ -87,10 +97,10 @@
     </section>
       <article class="hr">
         <hr>
-        <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+        <div></div>
       </article>
     <section class="section section-third">  
-      <article>Job Description
+      <article class="job-card">Job Description
          <button type="button" class="button button-main">Edit</button>
          <h4>Position Title</h4>
          <p>Junior Software Developer</p>
@@ -103,7 +113,7 @@
          <hr>
          <h4>Experience</h4>
          <p>Junior</p>
-       </article>
+       </article> 
        <article class="social-media">social media buttons</article>
        <article class="widgets">code widgets</article>  
     </section>
