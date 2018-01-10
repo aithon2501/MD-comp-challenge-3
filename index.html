@@ -14,7 +14,7 @@
       <p>The Thinker<i class="fa fa-sort-desc" aria-hidden="true"></i></p>
     </article>
     <hr>
-    <article>
+    <article class="aside--main">
       <h3>Main</h3>
         <ul>
           <li><i class="fa fa-home" aria-hidden="true"></i>Home</li>
@@ -35,29 +35,36 @@
           <li><i class="fa fa-share-square-o" aria-hidden="true"></i>Social</li>
         </ul>
     </article>
+    <hr>
     <article>
       <h3>Categories</h3>
-        <form>
+        <form class="categories">
+          <div>
           <input type="checkbox" class="administrative" checked="true" value="Administrative">
           <label for="administrative">Administrative</label>
+          </div>
+          <div>
           <input type="checkbox" class="design">
           <label for="design">Design</label>
+        </div>
+        <div>
           <input type="checkbox" class="excecutive"/>
           <label for="executive">Executive</label>
+        </div>
+        <div>
           <input type="checkbox" class="human resources" name="HR">
-          <label for="human resources"
-        </form>
+          <label for="human resources">Human Resources</label>
+        </div>
+        </form> 
     </article>
   </aside>
   <main>
     <header>
-      <section class="search-and-buttons">
         <button type="button" value="menu" class="button button--header button--menu"><i class="fa fa-bars fa-xs" aria-hidden="true"></i></button>
         <input type="search" class="input input--search" name="search" placeholder="Search for a job, task, or resume">
         <button type="button" value="add" class="button button--header" name="social media"><i class="fa fa-user-plus fa-xs" aria-hidden="true"></i></button> 
         <button type="button" value="calendar" class="button button--header"><i class="fa fa-calendar fa-xs" aria-hidden="true"></i></button>
         <button type="button" value="files" class="button button--header"><i class="fa fa-th fa-xs" aria-hidden="true"></i></button>
-      </section>
     </header>
     <section class="section section-first">
       <p>Junior Software Developer, Front End
