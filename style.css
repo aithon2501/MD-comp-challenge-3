@@ -4,11 +4,6 @@
 
 }
 
-aside {
-  background-color: #374050;
-  display: none;
-}
-
 body {
   display:grid;
   grid-template-columns: 0 4fr;
@@ -16,10 +11,14 @@ body {
 }
 
 aside {
+  background-color: #374050;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 7;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -27,45 +26,95 @@ main {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 7;
+  display:flex;
+  flex-direction: column;
 }   
 
-input.button:hover {
+.button:hover {
   background-color: #47A4F3;
 }
 
-article{
-  display: grid;
-}
-
 header {
-  grid-row-start: 1;
-  grid-row-end: 2;
   display: flex;
   justify-content: center;
+  height: 3rem;
+  padding: .7rem 0 0 0;
+}
+
+.aside-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+.img--nav {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+aside input checkbox {
+  display: inline-block;
 }
 
 .section-first {
-  grid-row-start: 2;
-  grid-row-end: 3;
+ justify-content: flex-start;
+ display: flex;
+}
+
+.section-first p {
+  width: 100%;
+  margin: 0;
+  font-size: .9rem;
+}
+
+.section-first button {
+  justify-content: flex-end;
 }
 
 .section-second {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
   visibility: hidden;
-  position:absolute;
+  position: absolute;
+}
+
+.job-card {
+  background-color: #FFFFFF;
+  justify-content: center;
+  width: 80%;
+  border: 1px solid #D3D3D3;
+}
+
+.section-first .button {
+  border-radius: 12px;
+}
+
+.administrative {
+  background-color: yellow;
 }
 
 .section-third {
-  grid-row: 4 / 5;
+  display: flex;
+  flex-direction: column;
+  background-color: #D3D3D3;
 }
 
 .social-media {
+  grid-column: 1 / 3;
   grid-row: 5 / 6;
 }
 
 .widgets {
+  grid-columns: 1 / 3;
   grid-row: 6 / 7;
+}
+
+.social-media {
+  
 }
 
 .hr {
@@ -78,9 +127,10 @@ header {
   margin: 0;
 }
 
-.hr i {
+.hr div {
   position: relative;
   bottom: 1rem;
+  background-image: url('images/down-chevron.svg');
 }
 
 .button {
@@ -111,6 +161,7 @@ header {
 .nav-dropdown {
   border: 1px solid #D3D3D3;
   border-radius: 12px;
+  text-align: center;
 }
 
 .button img {
@@ -118,6 +169,45 @@ header {
   width: .7rem;
 }
 
-.section-first .button {
-  border-radius: 12px;
+.button-main {
+  width: 3rem;
+}
+
+@media screen and (min-width: 550px) {
+* {
+  font-size: 16px;
+}  
+
+body {
+  display:grid;
+  grid-template-columns: 20% 4fr;
+  grid-template-rows: 10% 50% 10% 40% 10% 10%;
+}
+
+header{
+  
+}
+.nav-main {
+  visibility: visible;
+}
+
+.nav-dropdown {
+  visibility: hidden;
+}
+
+.nav-main {
+  visibility: visible;
+}
+ 
+aside {
+  visability: visible;
+ }
+
+.section-second {
+  visibility: visible;
+  position: static;
+  background-color: #EEF2F6;
+}
+
+
 }
