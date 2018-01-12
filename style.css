@@ -1,6 +1,6 @@
 * {
   font-family: Helvetica, sans-serif;
-  font-size: 85%  ;
+  font-size: 85%;
 }
 
 html {
@@ -9,19 +9,19 @@ html {
 
 body {
   display:grid;
-  grid-template-columns: 12% 4fr;
+  grid-template-columns: 15% 4fr;
   grid-template-rows: 10% 50% 10% 40% 10% 10%;
+  width:100%;
 }
 
 
-/*header attributes*/
+/*header--search bar and buttons*/
 
 header {
   display: flex;
   height: 5rem;
   justify-content: center;
   padding: 0 0 0 0;
-
 }
 
 .button--header {
@@ -41,7 +41,7 @@ header {
   width: 80%;
   margin: 0;
   border: 1px solid #D3D3D3;
-  font-size: .6rem;
+  font-size: .8rem;
 }
 
 .button {
@@ -60,7 +60,7 @@ aside {
   display: flex;
   flex-direction: column;
   font-size: .7rem;
-  height: 100vh;
+  height: 100%;
 }
 
 .aside-img {
@@ -83,18 +83,12 @@ ul {
 
 }
 
-h3 {
-  width: 100%;
-  height: 1.5rem;
-  display: inline-block;;
-}
-
 li {
-  margin: 0 0 0 .5rem;
+  margin: 0 0 .7rem 0;
 }
 
 li i {
-  margin-right: .5rem;
+  margin-right: 1rem;
 }
 
 .aside-img {
@@ -105,8 +99,12 @@ li i {
   margin: 0 0 0 1rem;
 }
 
-.administrative {
-  background-color: yellow;
+.categories div {
+  margin: 1rem 0 0 .2rem;
+}
+
+h3 {
+  margin: 1rem 0 0 1rem;
 }
 
 /* main section*/
@@ -118,45 +116,59 @@ main {
   grid-row-end: 7;
   display:flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   background-color: #FFFFFF;
 }   
 
-/*section 1 - search bar and buttons*/
+/*section 1 - job title with buttons*/
 
 .section-first {
  display: flex;
 }
 
-.section1-buttons img {
-  height: .7rem;
-  width: .7rem;
-  justify-content: flex-end;
-}
-
-.section-first .button {
-  border-radius: 12px;
-}
-
 .section-first p {
-  width: 100%;
+  width: 35%;
   margin: 0 0 0 1rem;
   font-size: .9rem;
   height: 1rem;
 }
 
-.section-first a {
-  margin: 0 0 0 1rem;
-  display: flex;
+.section1-buttons img {
+  height: .7rem;
+  width: .7rem;
 }
 
 .section1-buttons {
-  margin: 0 0 0 25rem ;
-}                                           
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.section1-buttons--button {
+  border-radius: 12px;
+}
+
+.section-first a {
+  margin: 0 0 0 1rem;
+  display: flex;
+}                            
 
 .job-info {
   display: flex;
-  flex-direction: column; 
+  flex-direction: row; 
+  width: 75%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 0 0 0 1rem;
+}
+
+.job-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /*section 2 - graphs*/
@@ -179,6 +191,8 @@ main {
 .bar-graph-button {
   border-radius: 12px;
 }
+
+/* circle graph styling adapted from the following article on the subject of building circle graphs (https://medium.com/@heyoka/scratch-made-svg-donut-pie-charts-in-html5-2c587e935d72)*/
 
 .circle-graph-text {
   color: #D3D3D3;
@@ -223,10 +237,6 @@ main {
   border-radius: 12px
 }
 
-.circle1 {
-  grid-column-start: 1/2;
-}
-
 .hr {
   text-align: center;
   color: #D3D3D3;
@@ -243,10 +253,6 @@ main {
   background-image: url('images/down-chevron.svg');
 }
 
-.nav-main {
-
-}
-
 .nav-dropdown {
   visibility: hidden;
   border: 1px solid #D3D3D3;
@@ -254,13 +260,29 @@ main {
   text-align: center;
 }
 
+.nav-main {
+  display:flex;
+  justify-content: space-around;
+}
+
+.a-nav {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /*section 3 - Job Info Card, social media buttons, links and widgets*/
+
+.section-third {
+  display: flex;
+  background-color: #EEF2F6;
+  text-transform: capitalize;
+}
 
 .job-card {
   background-color: #FFFFFF;
-  width: 60%;
+  width: 50%;
   border: 1px solid #D3D3D3;
-  margin: 2rem 0 0 1rem;
+  margin: 2rem 2rem 2rem 2rem;
   display: flex;
   flex-direction:column;
 }
@@ -278,13 +300,6 @@ h4 {
   margin: .5rem 0 0 1rem;
 }
 
-.section-third {
-  display: flex;
-  flex-direction: column;
-  background-color: #EEF2F6;
-  text-transform: capitalize;
-}
-
 .job-card--header {
   background-color: #717E93;
   margin: 0;
@@ -293,6 +308,11 @@ h4 {
   display: flex;  
   align-items: center;
 } 
+
+.job-card--header button {
+  color: #FFFFFF;
+  background-color: #717E93;
+}
 
 .job-card--header p {
   margin: 0 0 0 1rem;
@@ -304,25 +324,107 @@ h4 {
   border-radius: 50%;
 }
 
-.job-card--header button {
-  color: #FFFFFF;
-  background-color: #717E93;
+.text-wrap   {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
+.text-wrap p {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.text-wrap h4 {
+  width: 25%;
+  text-transform: uppercase;
+  align-self: flex-start;
+  margin: 1rem 0 0 1rem;
+}
+
+/*section 3 right side - social networkinga links and widgets*/
 
 .right-side {
   display: flex;
-
+  flex-direction: column;
+  width: 35%;
+  margin: 2rem 2rem 0 1rem;
+  align-items: flex-start;
 }
 
 .social-media {
-  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 100% ;
 }
 
-.widgets {
-  justify-content: flex-end;
+.social-media-button {
+  height: 3rem;
+  width: 100%;
+  border-radius: 0;
+  margin: 0 0 1rem 0;
+  color: #FFFFFF;
 }
 
+.facebook-button {
+  background-color: #5475BF;
+}
 
+.twitter-button {
+  background-color: #47A8E8;
+}
+
+.linkedin-button {
+  background-color: #4380B7;
+}
+
+.widgets h3 {
+  margin: 1rem 0 .3rem 0;
+  font-size: .8rem;
+}
+
+.widgets p {
+  margin: 0 0 .5rem;
+}
+
+.widget-input {
+  height: 2rem;
+  width: 75%;
+  border-radius: 0;
+  margin: 0;
+  border: 0;
+}
+
+.widget-input--email {
+  width: 100% ;
+}
+
+.widget-input-button {
+  height: 2rem;
+  width: 20%  ;
+  border-radius: 0;
+  color: #FFFFFF;
+  background-color: #68B5C2;
+  text-align: center;
+  margin: 0;
+  border: 0;
+}
+
+.text-wrap   {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-wrap p {
+}
+
+.text-wrap h4 {
+  width: 25%;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+/*lines needed for mobile medi query*/  
 /*.nav-dropdown {
   visibility: hidden;
 }
