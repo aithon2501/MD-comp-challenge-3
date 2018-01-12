@@ -32,7 +32,7 @@
           <li><i class="fa fa-map-marker" aria-hidden="true"></i>Locations</li>
           <li><i class="fa fa-sitemap" aria-hidden="true"></i>Workflows</li>
           <li><i class="fa fa-mobile" aria-hidden="true"></i>Job Boards</li>
-          <li><i class="fa fa-share-square-o" aria-hidden="true"></i>Social</li>
+          <li><i class="fa fa-users" aria-hidden="true"></i>Social</li>
         </ul>
     </article>
     <hr>
@@ -67,20 +67,22 @@
         <button type="button" value="files" class="button button--header"><i class="fa fa-th fa-xs" aria-hidden="true"></i></button>
     </header>
     <section class="section-first">
+      <div class="job-title">
+      <h2>Junior Software Developer, Front End</h2>
       <article class="job-info">
-      <h3>Junior Software Developer, Front End
-      </h3>
-      <p><i class="fa fa-map-marker" aria-hidden="true"></i>CURRENT DATE</p>
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i>JANUARY 12, 2018</p>
       <a href="preview.html">Preview this Post</a>
+      <div>
     </article>
     <article class="section1-buttons">
-      <button type="button" value="open" class="button button--open"><img class="green-dot" src="images/49328-green-dot-icon.png"></img>Open</button>
+      <button type="button" value="open" class="section1-button--button "><img class="green-dot" src="images/49328-green-dot-icon.png"></img>Open</button>
       
-      <button type="button" value="bookmark" class="button button--bookmark"><i class="fa fa-bookmark fa-xs" aria-hidden="true"></i></button>
+      <button type="button" value="bookmark" class="section1-button--button"><i class="fa fa-bookmark fa-xs" aria-hidden="true"></i></button>
       
-      <button type="button" value="pencil" class="button button--pencil"><i class="fa fa-pencil fa-xs" aria-hidden="true"></i></button>
+      <button type="button" value="pencil" class="section1-button--button"><i class="fa fa-tasks" aria-hidden="true"></i></button>
       
-      <button type="button" value="trash" class="button button--trash"><i class="fa fa-trash fa-xs" aria-hidden="true"></i></button>
+      <button type="button" value="trash" class="section1-button--button"><i class="fa fa-trash fa-xs" aria-hidden="true"></i></button>
+    </article>
     </section>
     <form class="nav nav-dropdown">
       <select>
@@ -104,6 +106,8 @@
     </nav>
     </section>
     <section class="section section-second">
+      
+<!-- /* circle graph styling and construcrtion adapted from the following article on the subject of building round graphs (https://medium.com/@heyoka/scratch-made-svg-donut-pie-charts-in-html5-2c587e935d72)*/ -->
       <div class="section2-circles">
       <article class="circle-graphs">
         <svg width="32%" height="100%" viewBox="0 0 42 42" class="circle1">
@@ -159,40 +163,73 @@
       <article class="job-card">
          <div class="job-card--header">
          <p>Job Description
-           <button type="button" class="button button-edit"><i class="fa fa-pencil fa-xs" aria-hidden="true"></i>Edit</button>
+           <button type="button" class="button button-edit"><i class="fa fa-tasks" aria-hidden="true"></i>  Edit</button>
          </p>
         </div>
-         <h4>Position Title</h4>
-         <p>Junior Software Developer</p>
+         <div class=  "text-wrap">
+           <h4>Position Title</h4>
+           <p>Junior Software Developer</p>
+         </div>
          <hr>
-         <h4>Location</h4>
-         <p>Denver, CO</p>
+         <div class="text-wrap">
+           <h4>Location</h4>
+           <p>Denver, CO</p>
+         </div>
          <hr>
+         <div class="text-wrap">
          <h4>Employment Type</h4>
          <p>Full-time</p>
+       </div>
          <hr>
+         <div class="text-wrap">
          <h4>Experience</h4>
          <p>Junior</p>
+         </div>
          <hr>
+         <div class="text-wrap">
          <h4>Status</h4>
          <p>Open</p>
+       </div>
          <hr>
+         <div class="text-wrap">
          <h4>Description</h4>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+       </div>
          <hr>
-         <div class="hiring-lead">
+         <div class="text-wrap hiring-lead">
            <h4>Hiring Lead</h4>
            <img class="hiring-headshot" src="images/art-1699977_640.jpg" alt="hiring lead headshot"/>
            <p>H.R. Gettajob</p>
          </div>
          <hr>
+         <div class="text-wrap">
          <h4>Approved Salary</h4>
          <p>50,000 per year</p>
+       </div>
          <hr>       
        </article> 
        <section class="right-side">
-         <article class="social-media">social media buttons</article>
-         <article class="widgets">code widgets</article>  
+         <article class="social-media">
+           <button class="social-media-button facebook-button" type="button">Post to Facebook</button>
+           <button class="social-media-button twitter-button" type="button">Tweet this Job</button>
+           <button class="social-media-button linkedin-button" type="button">Post to LinkedIn</button>
+         </article>
+         <article class="widgets">
+           <h3>Link to this Job</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+           <input class="widget-input" type="text" placeholder="https://loremipsumgenerator.com/">
+           <button class="widget-input-button" type="button">Copy</button>
+           <hr>
+           <h3>Use the Button Widget</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+           <input class="widget-input" type="text" placeholder="https://loremipsumgenerator.com/">
+           <button class="widget-input-button" type="button">Copy</button>
+           <hr> 
+           <h3>Upload Resumes by Email</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+           <input class="widget-input widget-input--email" type="text" placeholder="https://loremipsumgenerator.com/">
+          </article>
+         </article>  
        </section>
     </section>
 
