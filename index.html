@@ -3,7 +3,7 @@
 <head>
   <title>Job Portal</title>
   <link rel="stylesheet" type="text/css" href="normalize.css">
-  <!-- <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet"> -->
+  <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -19,7 +19,7 @@
         <ul>
           <li><i class="fa fa-home" aria-hidden="true"></i>Home</li>
           <li><i class="fa fa-briefcase" aria-hidden="true"></i>Jobs</li>
-          <li><i class="fa fa-file-text" aria-hidden="true"></i>Resumes</li>
+          <li><i class="fa fa-mobile" aria-hidden="true"></i>Resumes</li>
           <li><i class="fa fa-tasks" aria-hidden="true"></i>Tasks</li>
           <li><i class="fa fa-calendar" aria-hidden="true"></i>Calendar</li>
         </ul>
@@ -104,7 +104,9 @@
     </nav>
     </section>
     <section class="section section-second">
-      <svg width="20%" height="25%" viewBox="0 0 42 42" class="circle1">
+      <div class="section2-circles">
+      <article class="circle-graphs">
+        <svg width="32%" height="100%" viewBox="0 0 42 42" class="circle1">
         <circle class="circle-under" cx="21" cy="21" r="16" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
         <circle class="percent-segment" cx="21" cy="21" r="16" fill="transparent" stroke="#60B3B9" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="75"></circle>
         <g class="circle-graph-text">
@@ -114,8 +116,9 @@
           <text x="50%" y="50%" class="circle-graph-info">
             Applicants
           </text>
+        </g>
       </svg>
-      <svg width="20%" height="25%" viewBox="0 0 42 42" class="circle2">
+      <svg width="32%" height="100%" viewBox="0 0 42 42" class="circle2">
         <circle class="circle-under" cx="21" cy="21" r="16" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
 
         <circle class="percent-segment" cx="21" cy="21" r="16 " fill="transparent" stroke="#439EEC" stroke-width="3" stroke-dasharray="35 65" stroke-dashoffset="75"></circle>
@@ -126,8 +129,9 @@
           <text x="50%" y="50%" class="circle-graph-info">
             Interviews
           </text>
+        </g>
       </svg>
-      <svg width="20%" height="25%" viewBox="0 0 42 42" class="circle3">
+      <svg width="32%" height="100%" viewBox="0 0 42 42" class="circle3">
         <circle class="circle-outer" cx="21" cy="21" r="16" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
         <circle class="percent-segment" cx="21" cy="21" r="16" fill="transparent" stroke="#A36BAB" stroke-width="3" stroke-dasharray="15 85" stroke-dashoffset="75"></circle>
         <g class="circle-graph-text">
@@ -138,9 +142,14 @@
             Forewards
           </text>      
       </svg>
-        <!-- <img class="bar-graph-img" src="images/productivity-148197_1280.png" alt="job data bar graph"> -->
-        <button type="button" class="button circle-graph-button">TOTALS - out of 100 views</button>
-        <!-- <button type="button" class="button bar-graph-button">APPLICANTS/DAY</button> -->
+    </g>
+</article>
+        <button type="button" class="circle-graph-button">TOTALS - out of 100 views</button>
+  </div>
+      <div class="bar-graph-and">
+        <img class="bar-graph-img" src="images/audio-1292941_640.png" alt="job data bar graph">
+        <button type="button" class="button bar-graph-button">APPLICANTS/DAY</button>
+      </div>
     </section>
       <article class="hr">
         <hr>
@@ -150,9 +159,9 @@
       <article class="job-card">
          <div class="job-card--header">
          <p>Job Description
-         <button type="button" class="button button-edit"><i class="fa fa-pencil fa-xs" aria-hidden="true"></i>Edit</button>
-       </p>
-     </div>
+           <button type="button" class="button button-edit"><i class="fa fa-pencil fa-xs" aria-hidden="true"></i>Edit</button>
+         </p>
+        </div>
          <h4>Position Title</h4>
          <p>Junior Software Developer</p>
          <hr>
@@ -171,16 +180,20 @@
          <h4>Description</h4>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
          <hr>
-         <h4>Hiring Lead</h4>
-         <p>H.R. Gettajob</p>
+         <div class="hiring-lead">
+           <h4>Hiring Lead</h4>
+           <img class="hiring-headshot" src="images/art-1699977_640.jpg" alt="hiring lead headshot"/>
+           <p>H.R. Gettajob</p>
+         </div>
          <hr>
          <h4>Approved Salary</h4>
          <p>50,000 per year</p>
-         <hr>
-
+         <hr>       
        </article> 
-       <article class="social-media">social media buttons</article>
-       <article class="widgets">code widgets</article>  
+       <section class="right-side">
+         <article class="social-media">social media buttons</article>
+         <article class="widgets">code widgets</article>  
+       </section>
     </section>
 
 </body>
