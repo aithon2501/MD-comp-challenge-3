@@ -93,6 +93,10 @@ li {
   margin: 0 0 0 .5rem;
 }
 
+li i {
+  margin-right: .5rem;
+}
+
 .aside-img {
   flex-direction: column;
 }
@@ -158,10 +162,22 @@ main {
 /*section 2 - graphs*/
 
 .section-second {
-  visibility: visible;
-  position: static;
   background-color: #EEF2F6;
   display: flex
+}
+
+.circle-graphs {
+  /*height: 15rem;*/
+}
+
+.bar-graph-and {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar-graph-button {
+  border-radius: 12px;
 }
 
 .circle-graph-text {
@@ -185,11 +201,23 @@ main {
 }
 
 .bar-graph-img {
-  width: 35%;
-  height: 25%;
+  width: 100%;
+  height: 80%;
 }
 
-.circle-graph-button .bar-graph-button {
+.section2-circles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle-graph-button {
+  border-radius: 12px;
+  width: 10rem;
+
+}
+
+.bar-graph-button {
 /*  justify-content: flex-start;
   flex-wrap: wrap;*/
   border-radius: 12px
@@ -216,10 +244,11 @@ main {
 }
 
 .nav-main {
-  visibility: hidden;
+
 }
 
 .nav-dropdown {
+  visibility: hidden;
   border: 1px solid #D3D3D3;
   border-radius: 12px;
   text-align: center;
@@ -229,10 +258,11 @@ main {
 
 .job-card {
   background-color: #FFFFFF;
-  justify-content: center;
   width: 60%;
   border: 1px solid #D3D3D3;
-  margin: 0 0 0 5rem; 
+  margin: 2rem 0 0 1rem;
+  display: flex;
+  flex-direction:column;
 }
 
 .job-card hr {
@@ -265,13 +295,23 @@ h4 {
 } 
 
 .job-card--header p {
-  margin: 0;
+  margin: 0 0 0 1rem;
+}
 
+.hiring-headshot {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
 }
 
 .job-card--header button {
   color: #FFFFFF;
   background-color: #717E93;
+}
+
+.right-side {
+  display: flex;
+
 }
 
 .social-media {
