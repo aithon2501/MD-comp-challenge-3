@@ -1,6 +1,6 @@
 * {
   font-family: Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 85%  ;
 }
 
 html {
@@ -9,45 +9,17 @@ html {
 
 body {
   display:grid;
-  grid-template-columns: 0 4fr;
-  grid-template-rows: 10% 50% 0 40% 10% 10%;
-
+  grid-template-columns: 12% 4fr;
+  grid-template-rows: 10% 50% 10% 40% 10% 10%;
 }
 
-aside {
-  background-color: #374050;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 7;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  font-size: .7rem;
-  height: 100vh;
-}
-
-main {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 7;
-  display:flex;
-  flex-direction: column;
-  width: 80%;
-  background-color: #FFFFFF;
-}   
-
-.button:hover {
-  background-color: #47A4F3;
-}
 
 /*header attributes*/
 
 header {
   display: flex;
-  justify-content: center;
   height: 5rem;
+  justify-content: center;
   padding: 0 0 0 0;
 
 }
@@ -60,6 +32,10 @@ header {
   background-color: #FFFFFF;
 }
 
+.button:hover {
+  background-color: #47A4F3;
+}
+
 .input--search {
   height: 3rem;
   width: 80%;
@@ -68,6 +44,10 @@ header {
   font-size: .6rem;
 }
 
+.button {
+  border: 1px solid #D3D3D3;
+  background-color: #FFFFFF;
+}
 /* aside attributes*/
 
 aside {
@@ -121,7 +101,24 @@ li {
   margin: 0 0 0 1rem;
 }
 
-/* main sections*/
+.administrative {
+  background-color: yellow;
+}
+
+/* main section*/
+
+main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  display:flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #FFFFFF;
+}   
+
+/*section 1 - search bar and buttons*/
 
 .section-first {
  display: flex;
@@ -131,6 +128,10 @@ li {
   height: .7rem;
   width: .7rem;
   justify-content: flex-end;
+}
+
+.section-first .button {
+  border-radius: 12px;
 }
 
 .section-first p {
@@ -154,10 +155,77 @@ li {
   flex-direction: column; 
 }
 
+/*section 2 - graphs*/
+
 .section-second {
-  visibility: hidden;
-  position: absolute;
+  visibility: visible;
+  position: static;
+  background-color: #EEF2F6;
+  display: flex
 }
+
+.circle-graph-text {
+  color: #D3D3D3;
+  fill: #000;
+  transform: translateY(0.25rem);
+}
+
+.circle-graph-data {
+  font-size: 0.6rem;
+  line-height: 1;
+  text-anchor: middle;
+  transform: translateY(-0.25rem);
+}
+
+.circle-graph-info {
+  font-size: 0.2rem;
+  text-transform: uppercase;
+  text-anchor: middle;
+  transform: translateY(0.09rem);
+}
+
+.bar-graph-img {
+  width: 35%;
+  height: 25%;
+}
+
+.circle-graph-button .bar-graph-button {
+/*  justify-content: flex-start;
+  flex-wrap: wrap;*/
+  border-radius: 12px
+}
+
+.circle1 {
+  grid-column-start: 1/2;
+}
+
+.hr {
+  text-align: center;
+  color: #D3D3D3;
+  visibility: visible;
+}
+
+.hr hr {
+  margin: 0;
+}
+
+.hr div {
+  position: relative;
+  bottom: 1rem;
+  background-image: url('images/down-chevron.svg');
+}
+
+.nav-main {
+  visibility: hidden;
+}
+
+.nav-dropdown {
+  border: 1px solid #D3D3D3;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/*section 3 - Job Info Card, social media buttons, links and widgets*/
 
 .job-card {
   background-color: #FFFFFF;
@@ -174,21 +242,10 @@ li {
 
 .job-card p {
   margin: 0 0 0 1rem;
-
 }
 
 h4 {
   margin: .5rem 0 0 1rem;
-}
-
-
-
-.section-first .button {
-  border-radius: 12px;
-}
-
-.administrative {
-  background-color: yellow;
 }
 
 .section-third {
@@ -225,76 +282,14 @@ h4 {
   justify-content: flex-end;
 }
 
-.hr {
-  text-align: center;
-  color: #D3D3D3;
-  visibility: visible;
-}
 
-.hr hr {
-  margin: 0;
-}
-
-.hr div {
-  position: relative;
-  bottom: 1rem;
-  background-image: url('images/down-chevron.svg');
-}
-
-.button {
-  border: 1px solid #D3D3D3;
-  background-color: #FFFFFF;
-}
-
-.nav-main {
-  visibility: hidden;
-}
-
-.nav-dropdown {
-  border: 1px solid #D3D3D3;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.button-main {
-  width: 3rem;
-}
-
-@media screen and (min-width: 550px) {
-* {
-  font-size: 12px;
-}  
-
-body {
-  display:grid;
-  grid-template-columns: 12% 4fr;
-  grid-template-rows: 10% 50% 10% 40% 10% 10%;
-}
-
-header{
-  
-}
-.nav-main {
-  visibility: visible;
-}
-
-.nav-dropdown {
+/*.nav-dropdown {
   visibility: hidden;
 }
 
 .nav-main {
   visibility: visible;
-}
+}*/
  
-aside {
-  visability: visible;
- }
-
-.section-second {
-  visibility: visible;
-  position: static;
-  background-color: #EEF2F6;
-}
 
 
-}
