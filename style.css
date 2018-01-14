@@ -27,6 +27,11 @@ header {
   width: 3rem;
 }
 
+.button {
+  border: 1px solid #D3D3D3;
+  background-color: #FFFFFF;
+}
+
 .button:hover {
   background-color: #47A4F3;
 }
@@ -39,10 +44,6 @@ header {
   width: 80%;
 }
 
-.button {
-  border: 1px solid #D3D3D3;
-  background-color: #FFFFFF;
-}
 /* aside - picture and links*/
 
 aside {
@@ -75,7 +76,6 @@ ul {
   display: inline-block;
   list-style: none;
   padding: 0 0 0 1rem;
-
 }
 
 li {
@@ -235,10 +235,6 @@ h2 {
   visibility: visible;
 }
 
-.hr hr {
-  margin: 0;
-}
-
 .hr div {
   background-image: url('images/down-chevron.svg');
   bottom: 1rem;
@@ -370,8 +366,8 @@ h4 {
   color: #FFFFFF;
   height: 3rem;
   margin: 0 0 1rem 0;
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 .facebook-button {
@@ -380,21 +376,21 @@ h4 {
 
 .facebook-button-img {
   height: 1rem;
-  width: 1rem;
   margin-right: 2rem;
+  width: 1rem;
 
 }
 
 .twitter-button-img {
   height: 1rem;
-  width: 1rem;
   margin-right: 2rem;
+  width: 1rem;
 }
 
 .linkedin-button-img {
   height: 1rem;
-  width: 1rem;
   margin-right: 2rem;
+  width: 1rem;
 }
 
 .twitter-button {
@@ -489,5 +485,4 @@ h4 {
     margin: 0 2rem 2rem 2rem;
     width: 85%;
   }
-
 }
